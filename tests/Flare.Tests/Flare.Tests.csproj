@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="4.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="4.1.0" />
+    <Compile Include="../../src/Shared/SignalIdentity.cs" Link="SignalIdentity.cs" />
+    <Compile Include="../../src/Flare/SignalModel.cs" Link="SignalModel.cs" />
+    <Compile Include="../../src/Flare/LightingSettings.cs" Link="LightingSettings.cs" />
+    <Compile Include="../../src/Flare/ShotTicket.cs" Link="ShotTicket.cs" />
+    <Compile Include="../../src/Flare/SmokeTrail.cs" Link="SmokeTrail.cs" />
+  </ItemGroup>
+</Project>

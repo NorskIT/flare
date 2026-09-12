@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net481</TargetFramework><AssemblyName>Flare</AssemblyName><Version>1.3.0</Version><Authors>NorskIT</Authors><Copyright>2026 NorskIT</Copyright></PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\item_icon.png" LogicalName="Flare.item_icon.png" />
+    <PackageReference Include="JotunnLib" Version="2.29.2" />
+    <Compile Include="..\Shared\SignalIdentity.cs" Link="SignalIdentity.cs" />
+    <Reference Remove="UnityEngine.ProfilerModule;assembly_valheim_publicized;assembly_googleanalytics_publicized;assembly_guiutils_publicized;assembly_lux_publicized;assembly_postprocessing_publicized;assembly_simplemeshcombine_publicized;assembly_sunshafts_publicized;assembly_utils_publicized;SoftReferenceableAssets_publicized;gui_framework_publicized" />
+    <Reference Include="assembly_valheim" HintPath="$(VALHEIM_INSTALL)\valheim_Data\Managed\assembly_valheim.dll" Private="false" />
+    <Reference Include="assembly_utils" HintPath="$(VALHEIM_INSTALL)\valheim_Data\Managed\assembly_utils.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="CheckLocalReferences" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(VALHEIM_INSTALL)/valheim_Data/Managed/assembly_valheim.dll')" Text="Set VALHEIM_INSTALL in Environment.props to your Valheim installation." />
+    <Error Condition="!Exists('$(BEPINEX_PATH)/core/BepInEx.dll')" Text="Set BEPINEX_PATH in Environment.props to your BepInEx directory." />
+  </Target>
+</Project>

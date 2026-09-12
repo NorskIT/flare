@@ -56,3 +56,7 @@ After editing the server's configuration file, use `flare reload` to apply it. E
 - [Jotunn 2.30.0 or newer](https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/)
 
 Install these separately; their DLLs are not included in the Flare package.
+
+## Source and contributions
+
+Flare is open source under the [MIT license](https://github.com/NorskIT/flare/blob/main/LICENSE). Forks and contributions are welcome. See [building and contributing](https://github.com/NorskIT/flare/blob/main/CONTRIBUTING.md) to get started.

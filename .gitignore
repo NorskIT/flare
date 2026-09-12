@@ -1,0 +1,11 @@
+bin/
+obj/
+artifacts/
+TestResults/
+Environment.props
+.vs/
+.idea/
+*.user
+*.suo
+*.dll
+*.pdb

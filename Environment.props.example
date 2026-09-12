@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <VALHEIM_INSTALL>C:\Path\To\Steam\steamapps\common\Valheim</VALHEIM_INSTALL>
+    <BEPINEX_PATH>C:\Path\To\Your\Profile\BepInEx</BEPINEX_PATH>
+  </PropertyGroup>
+</Project>
