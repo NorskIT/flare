@@ -19,7 +19,7 @@ namespace Flare;
 [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
 public sealed class Plugin : BaseUnityPlugin
 {
-    public const string Id = "norskit_flare_plugin", Version = "1.3.0";
+    public const string Id = "norskit_flare_plugin", Version = "1.3.1";
     internal static Plugin Instance = null!;
     internal ConfigEntry<float> Height = null!, Burn = null!, Descent = null!, Strength = null!, LightRadius = null!, LightIntensity = null!;
     internal ConfigEntry<bool> LightShadows = null!;
@@ -47,7 +47,7 @@ public sealed class Plugin : BaseUnityPlugin
         harmony = new Harmony(Id);
         harmony.PatchAll(typeof(Plugin).Assembly);
         CommandManager.Instance.AddConsoleCommand(new StatusCommand());
-        Logger.LogInfo("Flare ready. Test recipe: 1 Wood per Signalbow and Arrow.");
+        Logger.LogInfo("Flare ready. Craft Bow & Flare with 1 Feather, 1 Surtling Core, 1 Wood and 1 Fine Wood.");
     }
 
     private ConfigEntry<float> Setting(string key, float value, float min, float max, string description) =>
@@ -57,8 +57,9 @@ public sealed class Plugin : BaseUnityPlugin
     private void RegisterItems()
     {
         var bow = new CustomItem(SignalIdentity.Bow, "Bow", new ItemConfig {
-            Name = "Signalbow and Arrow", Description = "Fire a harmless signal to help friends find you. Aim high. Consumed after one shot; no ammunition required.",
-            Amount = 1, Requirements = new[] { new RequirementConfig("Wood", 1) } });
+            Name = "Bow & Flare", Description = "Fire a harmless signal to help friends find you. Aim high. Consumed after one shot; no ammunition required.",
+            Amount = 1, Requirements = new[] { new RequirementConfig("Feathers", 1), new RequirementConfig("SurtlingCore", 1),
+                new RequirementConfig("Wood", 1), new RequirementConfig("FineWood", 1) } });
         Prepare(bow);
         bow.ItemPrefab.transform.Find("attach").gameObject.AddComponent<SignalDrawLight>();
         ItemManager.Instance.AddItem(bow);

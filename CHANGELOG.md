@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1
+
+- Rename the item to Bow & Flare.
+- Replace the test recipe with 1 Feather, 1 Surtling Core, 1 Wood and 1 Fine Wood per item.
+
 ## 1.3.0
 
 - Keep the drifting smoke and ordinary flare glow; remove light shafts.

@@ -6,20 +6,22 @@ Perfect for **nomap adventures**: send up a flare so your friends can find their
 
 ## Features
 
-- Craft **Signalbow and Arrow** for **1 Wood**, with no workbench or ammunition required.
+- Craft **Bow & Flare** with **1 Feather, 1 Surtling Core, 1 Wood and 1 Fine Wood**. No workbench or ammunition required.
 - Aim upward, draw, and release. Each item fires one harmless signal and is consumed after the shot.
 - The arrow burns and lights up like a torch while you draw the bow.
 - Flares remain visible beyond loaded areas, with visibility affected by distance, weather, and obstacles.
 - Smoke follows the flare and lingers after it burns out.
 - Server-controlled flight, lighting, and smoke settings, with a local shadow toggle.
 
-![Drawing the Signalbow and Arrow and launching a flare into the night sky](https://raw.githubusercontent.com/NorskIT/flare/main/images/flare-showcase.gif)
+![Drawing Bow & Flare and launching a flare into the night sky](https://raw.githubusercontent.com/NorskIT/flare/main/images/flare-showcase.gif)
 
 Light the arrow, draw the bow, and send a signal into the night.
 
 ![A player watching a flare light up the night sky](https://raw.githubusercontent.com/NorskIT/flare/main/images/flare-in-game.png)
 
-![Signalbow and Arrow inventory icon and item description](https://raw.githubusercontent.com/NorskIT/flare/main/images/signalbow-and-arrow.png)
+![Inventory preview from an earlier version](https://raw.githubusercontent.com/NorskIT/flare/main/images/signalbow-and-arrow.png)
+
+The inventory preview shows the previous item name; the current item is **Bow & Flare**.
 
 ## Installation (manual)
 
