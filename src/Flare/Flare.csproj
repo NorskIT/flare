@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><TargetFramework>net481</TargetFramework><AssemblyName>Flare</AssemblyName><Version>1.3.1</Version><Authors>NorskIT</Authors><Copyright>2026 NorskIT</Copyright></PropertyGroup>
+  <PropertyGroup><TargetFramework>net481</TargetFramework><AssemblyName>Flare</AssemblyName><Version>1.3.2</Version><Authors>NorskIT</Authors><Copyright>2026 NorskIT</Copyright></PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\item_icon.png" LogicalName="Flare.item_icon.png" />
     <PackageReference Include="JotunnLib" Version="2.29.2" />

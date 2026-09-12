@@ -19,7 +19,7 @@ namespace Flare;
 [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Patch)]
 public sealed class Plugin : BaseUnityPlugin
 {
-    public const string Id = "norskit_flare_plugin", Version = "1.3.1";
+    public const string Id = "norskit_flare_plugin", Version = "1.3.2";
     internal static Plugin Instance = null!;
     internal ConfigEntry<float> Height = null!, Burn = null!, Descent = null!, Strength = null!, LightRadius = null!, LightIntensity = null!;
     internal ConfigEntry<bool> LightShadows = null!;

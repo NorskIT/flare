@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.2
+
+- Reduce download size by keeping README screenshots and the animated showcase on GitHub instead of bundling them in the installation ZIP.
+- Gameplay and the inventory icon are unchanged.
+
 ## 1.3.1
 
 - Rename the item to Bow & Flare.
