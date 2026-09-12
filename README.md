@@ -19,9 +19,7 @@ Light the arrow, draw the bow, and send a signal into the night.
 
 ![A player watching a flare light up the night sky](https://raw.githubusercontent.com/NorskIT/flare/main/images/flare-in-game.png)
 
-![Inventory preview from an earlier version](https://raw.githubusercontent.com/NorskIT/flare/main/images/signalbow-and-arrow.png)
-
-The inventory preview shows the previous item name; the current item is **Bow & Flare**.
+![Bow & Flare item description and crafting recipe](https://raw.githubusercontent.com/NorskIT/flare/main/images/bow-and-flare.png)
 
 ## Installation (manual)
 
